@@ -138,8 +138,8 @@
     color: #1a1a1a;
     z-index: 5;
 }
-.search-input:focus ~ .ticker-wrapper,
-.search-input:not(:placeholder-shown) ~ .ticker-wrapper { display: none; }
+.search-container:has(.search-input:focus) .ticker-wrapper,
+.search-container:has(.search-input:not(:placeholder-shown)) .ticker-wrapper { display: none; }
 .ticker-wrapper { height: 24px; overflow: hidden; pointer-events: none; display: flex; flex-direction: column; }
 .ticker-text {
     color: #8c8c8c;
